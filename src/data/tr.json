@@ -1,0 +1,83 @@
+{
+    "hero": {
+        "title": "Yükselişte olan gelecek vadeden bir geliştirici",
+        "subtitle": "her şeye hazır!",
+        "description": "Merhaba, benim adım Mert. Full stack geliştiricisiyim. Hem arka uçta hem de ön uçta, hatta her ikisinde de harika işler yapabilecek birini arıyorsanız, bana güvenebilirsiniz.",
+        "hire": "İletişime Geç"
+    },
+
+    "navbar": {
+        "skills": "Yeteneklerim",
+        "projects": "Projelerim",
+        "hire": "İletişime Geç",
+        "switchLanguages": "GO TO ENGLISH"
+    },
+
+    "contact": {
+        "title": "Hadi sonraki ürünleriniz için",
+        "subtitle": "beraber çalışalım!",
+         "links": {
+            "blog": "Kişisel Blogum"
+        }
+    },
+
+    "skills": {
+        "title": "Yeteneklerim",
+        "items": [
+            {
+                "title": "Javascript",
+                "description": "Bu programlama dilini programın başında öğrendim. Portfolyomu temel olarak çoğunlukla bu şekilde oluşturdum."
+            },
+            {
+                "title": "React.Js",
+                "description": "Bu programlama dilini Javascript, HTML ve CSS'den sonra öğrendim. Javascript'in daha gelişmiş bir versiyonu olup, ön yüz programlamayı daha dinamik hale getiriyor."
+            },
+            {
+                "title": "Redux",
+                "description": "Bu konuyu React'ten sonra öğrendim. React programlarının daha değişmez olmasını ve State'lerin çok daha düzenli ve kolayca yönetilebilmesini olmasını sağlıyor."
+            }
+        ]
+    },
+
+    "profile": {
+        "title": "Profilim",
+        "info": [
+            { "label": "Doğum Tarihi", "value": "07.05.2002" },
+            { "label": "İkamet Şehri", "value": "İstanbul" },
+            { "label": "Eğitim", "value": "Beykent Üniv. Bilgisayar Mühendisliği" },
+            { "label": "Tercih Ettiği Rol", "value": "Frontend, Backend, UI" }
+        ],
+        "aboutTitle": "Benim Hakkımda",
+        "about": [
+            "Küçükken oyunlar gibi bazı programların nasıl çalıştığını görme isteğiyle programlama konularına ilgi duymaya başladım.",
+            "Hem arka uç hem de ön uç geliştirme konusunda kendimi geliştirmeye çalıştım, ancak Workintech'in Full Stack Pro programına katılana kadar kendimi yeterince yetkin bulmuyordum. Katıldığımdan beri kendime daha çok güveniyorum ve iş yapmaya hazırım."
+        ]
+    },
+
+    "projects": {
+        "title": "Projelerim",
+        "items": [
+            {
+                "title": "Workintech",
+                "description": "Kullanıcıların hangi çerezleri kabul edeceklerini seçmelerine olanak tanıyan, basit ve özelleştirilebilir bir çerez eklentisi.",
+                "techs": ["react", "redux", "axios"],
+                "github": "#",
+                "site": "#"
+            },
+            {
+                "title": "Rastgele Şakalar",
+                "description": "API'den rastgele şakalar çeken ve bunları dinamik olarak görüntüleyen bir uygulama.",
+                "techs": ["react", "tailwind"],
+                "github": "#",
+                "site": "#"
+            },
+            {
+                "title": "Yolculuk",
+                "description": "Sade kullanıcı arayüzü ve minimalist tasarıma odaklanan bir açılış sayfası projesi.",
+                "techs": ["react", "redux", "axios"],
+                "github": "#",
+                "site": "#"
+            }
+        ]
+    }
+}

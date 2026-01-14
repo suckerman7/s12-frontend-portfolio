@@ -1,0 +1,83 @@
+{
+    "hero": {
+        "title": "An aspiring developer in rise",
+        "subtitle": "is ready for everything!",
+        "description": "Hi, my name is Mert. I'm a full-stack developer. If you are looking for a developer who can do great things both in frontend, backend or both; you can count on me to do it.",
+        "hire": "Hire Me"
+    },
+
+    "navbar": {
+        "skills": "Skills",
+        "projects": "Projects",
+        "hire": "Hire Me",
+        "switchLanguages": "TÜRKÇE'YE GEÇ"
+    },
+
+    "contact": {
+        "title": "Let's work together on",
+        "subtitle": "your next product!",
+        "links": {
+            "blog": "Personal Blog"
+        }
+    },
+
+    "skills": {
+        "title": "Skills",
+        "items": [
+            {
+                "title": "Javascript",
+                "description": "I first learned about this programming language at the start of the program. It's how I mostly made this portfolio in basics."
+            },
+            {
+                "title": "React.Js",
+                "description": "I learned about this programming language after Javascript, HTML and CSS. It's a more advanced version of Javascript where frontend became more dynamic."
+            },
+            {
+                "title": "Redux",
+                "description": "I learned about this topic after React. It allows the React programs to be more immutable and states to be much more managable."
+            }
+        ]
+    },
+
+    "profile": {
+        "title": "Profile",
+        "info": [
+            { "label": "Date of Birth", "value": "07.05.2002" },
+            { "label": "City", "value": "İstanbul" },
+            { "label": "Education", "value": "Beykent University - Computer Engineering" },
+            { "label": "Preferred Position", "value": "Frontend, Backend, UI" }
+        ],
+        "aboutTitle": "About Me",
+        "about": [
+            "I have been interested in programming stuff since I was young, by seeing how some programs like games worked.",
+            "I did try to improve myself on backend and frontend, but I wasn't as efficient until joining Workintech's Full Stack Pro program. Since then, I feel more confident in myself and ready for work."
+        ]
+    },
+
+    "projects": {
+        "title": "Projects",
+        "items": [
+            {
+                "title": "Workintech",
+                "description": "A simple, customizable cookie plugin that allows users to select which cookies to accept.",
+                "techs": ["react", "redux", "axios"],
+                "github": "#",
+                "site": "#"
+            },
+            {
+                "title": "Random Jokes",
+                "description": "An app that fetches random jokes from an API and displays them dynamically.",
+                "techs": ["react", "tailwind"],
+                "github": "#",
+                "site": "#"
+            },
+            {
+                "title": "Journey",
+                "description": "A landing page project focused on clean UI and minimal design.",
+                "techs": ["react", "redux", "axios"],
+                "github": "#",
+                "site": "#"
+            }
+        ]
+    }
+}
