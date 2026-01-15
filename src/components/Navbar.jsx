@@ -3,13 +3,22 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleTheme, setLanguage } from "../store/uiSlice";
 
+import {useNavigate} from 'react-router-dom';
+import { toast } from "react-toastify";
+
 import useTranslation from '../hooks/useTranslation';
 
 export default function NavBar() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { language, theme } = useSelector((state) => state.ui);
 
   const translation = useTranslation();
+
+  const handleHire = () => {
+    toast.success(translation.toast.hire);
+    navigate("/contact");
+  }
 
   return (
     <header>
@@ -45,7 +54,7 @@ export default function NavBar() {
           <a href="#projects" className="text-gray-600 hover:text-black dark:text-[#6B7280]">
             {translation.navbar.projects}
           </a>
-          <button className="border px-4 py-2 rounded-md text-indigo-800 dark:bg-white dark:text-[#3730A3]">
+          <button onClick={handleHire} className="border px-4 py-2 rounded-md text-indigo-800 transition-all duration-200 hover:bg-indigo-800 hover:text-white dark:bg-white dark:text-[#3730A3] dark:hover:bg-[#E1E1FF]">
             {translation.navbar.hire}
           </button>
         </div>

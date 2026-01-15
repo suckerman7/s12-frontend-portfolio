@@ -58,26 +58,48 @@
         "title": "Projects",
         "items": [
             {
-                "title": "Workintech",
-                "description": "A simple, customizable cookie plugin that allows users to select which cookies to accept.",
-                "techs": ["react", "redux", "axios"],
-                "github": "#",
+                "title": "Technological Foods Website",
+                "description": "A simple website I made using HTML and CSS about ordering a pizza. It became a staple for a future project that I improved with React.",
+                "techs": ["html", "css"],
+                "github": "https://github.com/suckerman7/s4-bonus-challenge-submission",
                 "site": "#"
             },
             {
-                "title": "Random Jokes",
-                "description": "An app that fetches random jokes from an API and displays them dynamically.",
-                "techs": ["react", "tailwind"],
-                "github": "#",
+                "title": "Login E2E Testing",
+                "description": "A project I made using Cypress' E2E testing procedure where I wrote various tests about logging into a site.",
+                "techs": ["react", "cypress", "javascript"],
+                "github": "https://github.com/suckerman7/sprint7-4-loginform-E2E-test",
                 "site": "#"
             },
             {
-                "title": "Journey",
-                "description": "A landing page project focused on clean UI and minimal design.",
-                "techs": ["react", "redux", "axios"],
-                "github": "#",
+                "title": "Technological Foods: Order a Pizza!",
+                "description": "The improved version of the HTML/CSS website that I improved using various frontend tools, such as React, Axios, Cypress and Tailwind. You can order a pizza of your liking here!",
+                "techs": ["html", "tailwind", "react", "axios", "cypress"],
+                "github": "https://github.com/suckerman7/s8-challenge-pizza-react",
                 "site": "#"
             }
         ]
+    },
+
+    "toast": {
+        "hire": "Let's get in touch! 🚀",
+        "mail": "Opening your mail client ✉️",
+        "nomail": "Email is required ✋",
+        "wrongmail": "Please enter a valid email address 📧"
+    },
+
+    "contactform": {
+        "title": "Contact me",
+        "emailph": "Enter your email",
+        "companyph": "Enter your company's name (Optional)",
+        "messageph": "Your message (Optional)",
+        "button": "Send Message",
+        "returnbutton": "<- Back To Main page"
+    },
+
+    "thankyou": {
+        "title": "Thank you for taking your time to consider me! 🙏",
+        "subtitle": "I'll return back to you as soon as possible!",
+        "button": "Return to main page"
     }
 }

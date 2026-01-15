@@ -1,7 +1,11 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {useSelector} from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+
 import PortfolioProvider from './components/PortfolioProvider';
 import Home from './components/Home';
+import ContactPage from './components/ContactPage';
+import ThankYouPage from './components/ThankYouPage';
 
 export default function App() {
 
@@ -14,8 +18,16 @@ export default function App() {
           <Router>
             <Routes>  
                 <Route path="/" element={<Home />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path='/thank-you' element={<ThankYouPage />} />
             </Routes>
           </Router>
+
+          <ToastContainer
+            position="top-right"
+            autoClose={3000} 
+            theme={theme === 'dark' ? "dark" : "light"}
+          />
         </PortfolioProvider>
       </div>
    </div>

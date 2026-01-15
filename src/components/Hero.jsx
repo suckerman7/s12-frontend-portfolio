@@ -3,11 +3,20 @@ import heroImg from '../images/mert_yuksel.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+import {useNavigate} from 'react-router-dom';
+import { toast } from "react-toastify";
+
 import useTranslation from '../hooks/useTranslation';
 
 export default function Hero() {
 
+    const navigate = useNavigate();
     const translation = useTranslation();
+
+    const handleHire = () => {
+        toast.success(translation.toast.hire);
+        navigate("/contact");
+    }
 
     return (
         <section className='grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-20 items-center'>
@@ -26,14 +35,14 @@ export default function Hero() {
                 </p>
 
                 <div className='flex gap-4'>
-                    <button className='bg-indigo-800 text-white px-6 py-3 rounded-md dark:bg-[#E1E1FF] dark:text-black'>
+                    <button onClick={handleHire} className='bg-indigo-800 text-white px-6 py-3 rounded-md transition-all duration-200 hover:bg-indigo-700 hover:scale-[1.02] dark:bg-[#E1E1FF] dark:text-black dark:hover:bg-[#C7C4FF]'>
                         {translation.hero.hire}
                     </button>
-                    <button className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 dark:text-[#BAB2E7] dark:bg-[#383838]'>
+                    <button onClick={() => window.open('https://github.com/suckerman7', "_blank")} className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 transition-all duration-200 hover:bg-indigo-50 hover:scale-[1.02] dark:text-[#BAB2E7] dark:bg-[#383838] dark:hover:bg-[#4A4A4A]'>
                         <FontAwesomeIcon className='text-indigo-800 text-2xl dark:text-[#BAB2E7] dark:bg-[#383838]' icon={faGithub} />
                         Github
                     </button>
-                    <button className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 dark:text-[#BAB2E7] dark:bg-[#383838]'>
+                    <button onClick={() => window.open('https://www.linkedin.com/in/mert-y%C3%BCksel-904396311/', "_blank")} className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 transition-all duration-200 hover:bg-indigo-50 hover:scale-[1.02] dark:text-[#BAB2E7] dark:bg-[#383838] dark:hover:bg-[#4A4A4A]'>
                         <FontAwesomeIcon className='text-indigo-800 text-2xl dark:text-[#BAB2E7] dark:bg-[#383838]' icon={faLinkedin} />
                         LinkedIn
                     </button>

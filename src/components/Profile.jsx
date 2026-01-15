@@ -8,11 +8,11 @@ export default function Profile() {
         <section className='px-8 py-20 grid md:grid-cols-2 gap-10'>
 
             <div>
-                <h1 className='text-[#1F2937] text-5xl leading-none font-semibold mb-4 dark:text-[#AEBCCF]'>Profile</h1>
+                <h1 className='text-[#1F2937] text-5xl leading-none font-semibold mb-4 dark:text-[#AEBCCF]'>{profile.title}</h1>
 
                 <br />
 
-                <h2 className='text-indigo-700 text-3xl font-bold mb-6 dark:text-[#B7AAFF]'>{profile.title}</h2>
+                <h2 className='text-indigo-700 text-3xl font-bold mb-6 dark:text-[#B7AAFF]'>{profile.subtitle}</h2>
 
                 <ul className='space-y-3 text-sm'>
                     {profile.info.map((item) => (

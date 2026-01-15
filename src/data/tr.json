@@ -14,8 +14,8 @@
     },
 
     "contact": {
-        "title": "Hadi sonraki ürünleriniz için",
-        "subtitle": "beraber çalışalım!",
+        "title": "Gelecekteki projelerde",
+        "subtitle": "birlikte çalışabiliriz:",
          "links": {
             "blog": "Kişisel Blogum"
         }
@@ -41,13 +41,14 @@
 
     "profile": {
         "title": "Profilim",
+        "subtitle": "Genel Bilgiler",
         "info": [
             { "label": "Doğum Tarihi", "value": "07.05.2002" },
             { "label": "İkamet Şehri", "value": "İstanbul" },
             { "label": "Eğitim", "value": "Beykent Üniv. Bilgisayar Mühendisliği" },
             { "label": "Tercih Ettiği Rol", "value": "Frontend, Backend, UI" }
         ],
-        "aboutTitle": "Benim Hakkımda",
+        "aboutTitle": "Hakkımda",
         "about": [
             "Küçükken oyunlar gibi bazı programların nasıl çalıştığını görme isteğiyle programlama konularına ilgi duymaya başladım.",
             "Hem arka uç hem de ön uç geliştirme konusunda kendimi geliştirmeye çalıştım, ancak Workintech'in Full Stack Pro programına katılana kadar kendimi yeterince yetkin bulmuyordum. Katıldığımdan beri kendime daha çok güveniyorum ve iş yapmaya hazırım."
@@ -58,26 +59,48 @@
         "title": "Projelerim",
         "items": [
             {
-                "title": "Workintech",
-                "description": "Kullanıcıların hangi çerezleri kabul edeceklerini seçmelerine olanak tanıyan, basit ve özelleştirilebilir bir çerez eklentisi.",
-                "techs": ["react", "redux", "axios"],
-                "github": "#",
+                "title": "Teknolojik Yemekler Web Sitesi",
+                "description": "HTML ve CSS kullanarak yaptığım basit bir pizza siparişi sitesi. Bu site, React ile geliştirdiğim gelecekteki bir proje için temel oluşturdu.",
+                "techs": ["html", "css"],
+                "github": "https://github.com/suckerman7/s4-bonus-challenge-submission",
                 "site": "#"
             },
             {
-                "title": "Rastgele Şakalar",
-                "description": "API'den rastgele şakalar çeken ve bunları dinamik olarak görüntüleyen bir uygulama.",
-                "techs": ["react", "tailwind"],
-                "github": "#",
+                "title": "Giriş Uçtan Uca Testi",
+                "description": "Cypress'in uçtan uca test prosedürünü kullanarak yaptığım bir proje. Bu projede, bir siteye giriş yapma ile ilgili çeşitli testler yazdım.",
+                "techs": ["react", "cypress", "javascript"],
+                "github": "https://github.com/suckerman7/sprint7-4-loginform-E2E-test",
                 "site": "#"
             },
             {
-                "title": "Yolculuk",
-                "description": "Sade kullanıcı arayüzü ve minimalist tasarıma odaklanan bir açılış sayfası projesi.",
-                "techs": ["react", "redux", "axios"],
-                "github": "#",
+                "title": "Teknolojik Yemekler: Pizza Sipariş Et!",
+                "description": "React, Axios, Cypress ve Tailwind gibi çeşitli ön uç araçları kullanarak geliştirdiğim HTML/CSS web sitesinin iyileştirilmiş versiyonu. Buradan dilediğiniz pizzayı sipariş edebilirsiniz!",
+                "techs": ["html", "tailwind", "react", "axios", "cypress"],
+                "github": "https://github.com/suckerman7/s8-challenge-pizza-react",
                 "site": "#"
             }
         ]
+    },
+
+    "toast": {
+        "hire": "Hadi iletişime geçelim! 🚀",
+        "mail": "Mail uygulamanı açalım! ✉️",
+        "nomail": "Email girmen gerekiyor. ✋",
+        "wrongmail": "Doğru bir email adresi girmen gerekiyor. 📧"
+    },
+
+    "contactform": {
+        "title": "Benimle iletişime geç",
+        "emailph": "Email adresini gir",
+        "companyph": "Şirketinin adını gir (Opsiyonel)",
+        "messageph": "Mesaj ekle (Opsiyonel)",
+        "button": "Mesaj Gönder",
+        "returnbutton": "<- Ana sayfaya geri dön"
+    },
+
+    "thankyou": {
+        "title": "Bana fırsat tanıdığınız için teşekkürler! 🙏",
+        "subtitle": "En kısa sürede sizinle iletişime geçeceğim.",
+        "button": "Ana sayfaya dön"
     }
 }
