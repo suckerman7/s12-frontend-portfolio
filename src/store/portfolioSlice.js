@@ -7,9 +7,10 @@ export const sendPortfolioData = createAsyncThunk(
     try {
       return await postPortfolioData(language);
     } catch (error) {
-      return rejectWithValue(
-        error.response?.data || "Bir hata oluştu."
-      );
+      return rejectWithValue({
+        message: error.message,
+        status: error.status,
+      });
     }
   }
 );
@@ -33,7 +34,7 @@ const portfolioSlice = createSlice({
       })
       .addCase(sendPortfolioData.rejected, (state, action) => {
         state.status = "error";
-        state.error = action.payload;
+        state.error = action.payload?.message;
       });
   },
 });
