@@ -63,21 +63,21 @@
                 "description": "HTML ve CSS kullanarak yaptığım basit bir pizza siparişi sitesi. Bu site, React ile geliştirdiğim gelecekteki bir proje için temel oluşturdu.",
                 "techs": ["html", "css"],
                 "github": "https://github.com/suckerman7/s4-bonus-challenge-submission",
-                "site": "#"
+                "site": "https://s4-bonus-challenge-submission.vercel.app/"
             },
             {
                 "title": "Giriş Uçtan Uca Testi",
                 "description": "Cypress'in uçtan uca test prosedürünü kullanarak yaptığım bir proje. Bu projede, bir siteye giriş yapma ile ilgili çeşitli testler yazdım.",
                 "techs": ["react", "cypress", "javascript"],
                 "github": "https://github.com/suckerman7/sprint7-4-loginform-E2E-test",
-                "site": "#"
+                "site": "https://sprint7-4-loginform-e2-e-test.vercel.app/"
             },
             {
                 "title": "Teknolojik Yemekler: Pizza Sipariş Et!",
                 "description": "React, Axios, Cypress ve Tailwind gibi çeşitli ön uç araçları kullanarak geliştirdiğim HTML/CSS web sitesinin iyileştirilmiş versiyonu. Buradan dilediğiniz pizzayı sipariş edebilirsiniz!",
                 "techs": ["html", "tailwind", "react", "axios", "cypress"],
                 "github": "https://github.com/suckerman7/s8-challenge-pizza-react",
-                "site": "#"
+                "site": "https://s8-challenge-pizza-react.vercel.app/"
             }
         ]
     },

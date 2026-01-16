@@ -63,21 +63,21 @@
                 "description": "A simple website I made using HTML and CSS about ordering a pizza. It became a staple for a future project that I improved with React.",
                 "techs": ["html", "css"],
                 "github": "https://github.com/suckerman7/s4-bonus-challenge-submission",
-                "site": "#"
+                "site": "https://s4-bonus-challenge-submission.vercel.app/"
             },
             {
                 "title": "Login E2E Testing",
                 "description": "A project I made using Cypress' E2E testing procedure where I wrote various tests about logging into a site.",
                 "techs": ["react", "cypress", "javascript"],
                 "github": "https://github.com/suckerman7/sprint7-4-loginform-E2E-test",
-                "site": "#"
+                "site": "https://sprint7-4-loginform-e2-e-test.vercel.app/"
             },
             {
                 "title": "Technological Foods: Order a Pizza!",
                 "description": "The improved version of the HTML/CSS website that I improved using various frontend tools, such as React, Axios, Cypress and Tailwind. You can order a pizza of your liking here!",
                 "techs": ["html", "tailwind", "react", "axios", "cypress"],
                 "github": "https://github.com/suckerman7/s8-challenge-pizza-react",
-                "site": "#"
+                "site": "https://s8-challenge-pizza-react.vercel.app/"
             }
         ]
     },
