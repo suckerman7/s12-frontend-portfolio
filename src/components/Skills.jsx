@@ -14,7 +14,7 @@ export default function Skills() {
                         <h3 className='text-3xl font-semibold text-indigo-700 mb-2 dark:text-[#B7AAFF]'>
                             {skill.title}
                         </h3>
-                        <p className='text-gray-600 text-sm dark:text-white'>
+                        <p className='text-gray-600 text-xs dark:text-white'>
                             {skill.description}
                         </p>
                     </div>

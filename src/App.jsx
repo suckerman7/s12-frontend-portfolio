@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div className={theme === 'dark' ? "dark" : ""}>
-      <div className="min-h-screen bg-white text-gray-800 dark:bg-[#252128] dark:text-gray-100 transition-colors">
+      <div className="min-h-screen font-inter bg-white text-gray-800 dark:bg-[#252128] dark:text-gray-100 transition-colors">
         <PortfolioProvider>
           <Router>
             <Routes>  

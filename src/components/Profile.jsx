@@ -23,7 +23,7 @@ export default function Profile() {
                 </div>
 
                 <div>
-                    <h2 className=' text-indigo-700 text-3xl mb-4 dark:text-[#B7AAFF]'>{profile.aboutTitle}</h2>
+                    <h2 className=' text-indigo-700 text-3xl font-bold mb-4 dark:text-[#B7AAFF]'>{profile.aboutTitle}</h2>
 
                     {profile.about.map((paragraph, index) => (
                         <p key={index} className='text-gray-600 mb-4 dark:text-white'>
