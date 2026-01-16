@@ -28,6 +28,8 @@ export default function ProjectCard({ title, description, techs, image, github, 
             <div className='flex justify-between items-center mt-4 text-sm'>
                 <a
                     href={github}
+                    data-testid='project-github'
+                    target='_blank'
                     className='text-indigo-800 hover:underline flex items-center gap-2 dark:text-[#E1E1FF]'
                 >
                     <FontAwesomeIcon icon={faGithub} />
@@ -36,6 +38,7 @@ export default function ProjectCard({ title, description, techs, image, github, 
 
                 <a
                     href={site}
+                    target='_blank'
                     className='text-indigo-800 hover:underline dark:text-[#E1E1FF]'
                 >
                     View Site

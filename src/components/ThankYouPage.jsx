@@ -7,7 +7,7 @@ export default function ThankYouPage() {
 
     return (
         <section className='min-h-screen flex flex-col items-center justify-center px-8 text-center'>
-            <h1 className='text-4xl md:text-5xl font-bold mb-4 text-indigo-700 dark:text-[#B7AAFF]'>
+            <h1 data-testid="thank-you-title" className='text-4xl md:text-5xl font-bold mb-4 text-indigo-700 dark:text-[#B7AAFF]'>
                 {translation.thankyou.title}
             </h1>
 

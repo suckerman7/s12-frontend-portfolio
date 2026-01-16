@@ -48,7 +48,12 @@ export default function ContactPage() {
             encodeURIComponent("New Contact Request") +
             `&body=${encodeURIComponent(mailBody)}`;
 
-        window.location.href = mailToLink;
+        const isCypress = window.Cypress;
+        const testEnv = import.meta.env.VITE_DISABLE_MAIL === "true";
+
+        if(!isCypress && !testEnv) {
+            window.location.href = mailToLink;
+        }
 
         toast.success(translation.toast.mail);
 
@@ -58,9 +63,7 @@ export default function ContactPage() {
             message: "",
         });
 
-        setTimeout(() => {
-            navigate("/thank-you");
-        }, 800);
+        navigate("/thank-you");
     };
 
     return (
@@ -80,6 +83,7 @@ export default function ContactPage() {
                 <input
                     type="text"
                     name="email"
+                    data-testid="contact-email"
                     placeholder={translation.contactform.emailph}
                     value={form.email}
                     onChange={handleChange}
@@ -89,6 +93,7 @@ export default function ContactPage() {
                 <input
                     type="text"
                     name="company"
+                    data-testid="contact-company"
                     placeholder={translation.contactform.companyph} 
                     value={form.company}
                     onChange={handleChange}
@@ -97,6 +102,7 @@ export default function ContactPage() {
 
                 <textarea
                     name="message"
+                    data-testid="contact-message"
                     placeholder={translation.contactform.messageph}
                     value={form.message}
                     onChange={handleChange}
@@ -105,6 +111,7 @@ export default function ContactPage() {
 
                 <button 
                     type='submit'
+                    data-testid="contact-submit"
                     className='bg-indigo-800 text-white px-6 py-3 rounded hover:bg-indigo-700 dark:bg-[#E1E1FF] dark:text-black'
                 >
                     {translation.contactform.button} 

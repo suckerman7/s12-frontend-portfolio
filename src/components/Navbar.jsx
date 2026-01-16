@@ -25,6 +25,7 @@ export default function NavBar() {
       <div className="flex justify-end items-center px-8 py-2 gap-4 text-sm">
         <button
           onClick={() => dispatch(toggleTheme())}
+          data-testid="theme-toggle"
           className="w-9 h-9 flex items-center justify-center rounded-full border dark:border-gray-600"
         >
           <FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} className="text-gray-700 dark:text-yellow-300" />
@@ -34,6 +35,7 @@ export default function NavBar() {
           onClick={() =>
             dispatch(setLanguage(language === "en" ? "tr" : "en"))
           }
+          data-testid="language-toggle"
           className="font-medium text-gray-600 hover:text-indigo-700"
         >
           {translation.navbar.switchLanguages}

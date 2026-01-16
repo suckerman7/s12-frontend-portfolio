@@ -41,6 +41,7 @@
 
     "profile": {
         "title": "Profile",
+        "subtitle": "General Information",
         "info": [
             { "label": "Date of Birth", "value": "07.05.2002" },
             { "label": "City", "value": "İstanbul" },

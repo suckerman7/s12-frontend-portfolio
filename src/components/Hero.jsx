@@ -19,7 +19,7 @@ export default function Hero() {
     }
 
     return (
-        <section className='grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-20 items-center'>
+        <section className='grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 px-8 py-20 items-center'>
             <div>
                 <div className="flex items-center gap-4 mb-2">
                     <span className="w-24 h-0.5 bg-indigo-800"></span>
@@ -49,12 +49,14 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className='rounded-xl overflow-hidden shadow'>
-                <img
-                    src={heroImg}
-                    alt='mert yuksel'
-                    className='w-full h-full object-cover'
-                />
+            <div className='flex justify-center'>
+                <div className="w-80 h-110 rounded-2xl overflow-hidden shadow-lg">
+                    <img
+                        src={heroImg} 
+                        alt="mert yuksel"
+                        className="w-full h-full object-cover object-top hover:scale-[1.03] transition-transform duration-300"
+                    />
+                </div>
             </div>
         </section>
     );
