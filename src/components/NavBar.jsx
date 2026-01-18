@@ -22,14 +22,40 @@ export default function NavBar() {
 
   return (
     <header>
-      <div className="flex justify-end items-center px-8 py-2 gap-4 text-sm">
+      <div className="flex justify-end items-center px-8 py-2 gap-4 text-[15px]">
         <button
           onClick={() => dispatch(toggleTheme())}
           data-testid="theme-toggle"
-          className="w-9 h-9 flex items-center justify-center rounded-full border dark:border-gray-600"
+          aria-label="Toggle theme"
+          className={`
+            relative inline-flex items-center
+            w-12 h-6 rounded-full
+            transition-colors
+            ${theme === "dark" ? "bg-gray-700" : "bg-indigo-600"}
+          `}
         >
-          <FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} className="text-gray-700 dark:text-yellow-300" />
+          <span
+            className={`
+              absolute top-0.5 left-0.5
+              w-5 h-5 rounded-full bg-white shadow
+              flex items-center justify-center
+              transition-transform
+              ${theme === "dark" ? "translate-x-6" : ""}
+            `}
+          >
+          <FontAwesomeIcon
+            icon={theme === "dark" ? faMoon : faSun}
+            className={theme === "dark" ? "text-gray-700" : "text-yellow-400"}
+            size="xs"
+          />
+          </span>
         </button>
+
+        <span className="font-semibold tracking-wide text-[#777777] dark:text-[#D9D9D9]">
+            {theme === "dark" ? "LIGHT MODE" : "DARK MODE"}
+        </span>
+
+        <p className='text-[#777777] dark:text-[#D9D9D9]'> | </p>
 
         <button
           onClick={() =>
@@ -37,6 +63,7 @@ export default function NavBar() {
           }
           data-testid="language-toggle"
           className="font-medium text-gray-600 hover:text-indigo-700"
+          aria-label="Change the language"
         >
           {translation.navbar.switchLanguages}
         </button>

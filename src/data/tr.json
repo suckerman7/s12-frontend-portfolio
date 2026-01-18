@@ -1,8 +1,8 @@
 {
     "hero": {
-        "title": "Yükselişte olan gelecek vadeden bir geliştirici",
-        "subtitle": "her şeye hazır!",
-        "description": "Merhaba, benim adım Mert. Full stack geliştiricisiyim. Hem arka uçta hem de ön uçta, hatta her ikisinde de harika işler yapabilecek birini arıyorsanız, bana güvenebilirsiniz.",
+        "title": "Yükselişte olan ve gelecek vadeden bir geliştirici",
+        "subtitle": "her şeye hazır",
+        "description": "Merhaba, ben Mert Yüksel. Full stack geliştiricisiyim. Hem backend'de hem de frontend'de güzel ve kaliteli işler yapabilecek birini arıyorsanız, bana güvenebilirsiniz.",
         "hire": "İletişime Geç"
     },
 
@@ -15,7 +15,7 @@
 
     "contact": {
         "title": "Gelecekteki projelerde",
-        "subtitle": "birlikte çalışabiliriz:",
+        "subtitle": "birlikte çalışmak dileğiyle:",
          "links": {
             "blog": "Kişisel Blogum"
         }
@@ -30,7 +30,7 @@
             },
             {
                 "title": "React.Js",
-                "description": "Bu programlama dilini Javascript, HTML ve CSS'den sonra öğrendim. Javascript'in daha gelişmiş bir versiyonu olup, ön yüz programlamayı daha dinamik hale getiriyor."
+                "description": "Bu programlama dilini Javascript, HTML ve CSS'den sonra öğrendim. Javascript'in daha gelişmiş bir versiyonu olup, frontend programlamayı daha dinamik hale getiriyor."
             },
             {
                 "title": "Redux",
@@ -45,22 +45,23 @@
         "info": [
             { "label": "Doğum Tarihi", "value": "07.05.2002" },
             { "label": "İkamet Şehri", "value": "İstanbul" },
-            { "label": "Eğitim", "value": "Beykent Üniv. Bilgisayar Mühendisliği" },
+            { "label": "Eğitim", "value": "Beykent Üniv. Bilgisayar Mühendisliği", "subValue": "Lisans, 2024" },
             { "label": "Tercih Ettiği Rol", "value": "Frontend, Backend, UI" }
         ],
         "aboutTitle": "Hakkımda",
         "about": [
-            "Küçükken oyunlar gibi bazı programların nasıl çalıştığını görme isteğiyle programlama konularına ilgi duymaya başladım.",
-            "Hem arka uç hem de ön uç geliştirme konusunda kendimi geliştirmeye çalıştım, ancak Workintech'in Full Stack Pro programına katılana kadar kendimi yeterince yetkin bulmuyordum. Katıldığımdan beri kendime daha çok güveniyorum ve iş yapmaya hazırım."
+            "Erken yaşlarımda oyun programlarının nasıl çalıştığını görme isteğiyle programlama konularına ilgi duymaya başladım.",
+            "Hem backend hem de frontend geliştirme konusunda araştırmalar yaptım. Hem okulda aldığım eğitim, bulunduğum projeler hem de Workintech'in Full Stack Pro programıyla her geçen gün kendimi daha da geliştiriyor ve kendime olan güvenimin daha da arttığını görüyorum."
         ]
     },
 
     "projects": {
         "title": "Projelerim",
+        "sitelink": "Siteye Git",
         "items": [
             {
                 "title": "Teknolojik Yemekler Web Sitesi",
-                "description": "HTML ve CSS kullanarak yaptığım basit bir pizza siparişi sitesi. Bu site, React ile geliştirdiğim gelecekteki bir proje için temel oluşturdu.",
+                "description": "HTML ve CSS kullanarak yaptığım bir pizza siparişi sitesidir. Bu site, React ile geliştirdiğim gelecekteki bir proje için temel oluşturdu.",
                 "techs": ["html", "css"],
                 "github": "https://github.com/suckerman7/s4-bonus-challenge-submission",
                 "site": "https://s4-bonus-challenge-submission.vercel.app/"
@@ -74,7 +75,7 @@
             },
             {
                 "title": "Teknolojik Yemekler: Pizza Sipariş Et!",
-                "description": "React, Axios, Cypress ve Tailwind gibi çeşitli ön uç araçları kullanarak geliştirdiğim HTML/CSS web sitesinin iyileştirilmiş versiyonu. Buradan dilediğiniz pizzayı sipariş edebilirsiniz!",
+                "description": "React, Axios, Cypress ve Tailwind gibi çeşitli frontend araçları kullanarak geliştirdiğim HTML/CSS web sitesinin iyileştirilmiş versiyonudur. Buradan dilediğiniz pizzayı sipariş edebilirsiniz!",
                 "techs": ["html", "tailwind", "react", "axios", "cypress"],
                 "github": "https://github.com/suckerman7/s8-challenge-pizza-react",
                 "site": "https://s8-challenge-pizza-react.vercel.app/"
@@ -86,7 +87,11 @@
         "hire": "Hadi iletişime geçelim! 🚀",
         "mail": "Mail uygulamanı açalım! ✉️",
         "nomail": "Email girmen gerekiyor. ✋",
-        "wrongmail": "Doğru bir email adresi girmen gerekiyor. 📧"
+        "wrongmail": "Doğru bir email adresi girmen gerekiyor. 📧",
+        "github": "GitHub siteni açıyorum. 🧑‍💻",
+        "site": "Projenin canlı sayfasını açıyorum. 🚀",
+        "githubprofile": "GitHub profilini açıyorum.",
+        "linkedinprofile": "LinkedIn profilin açıyorum."
     },
 
     "contactform": {

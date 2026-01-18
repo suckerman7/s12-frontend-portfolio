@@ -11,12 +11,26 @@ export default function Profile() {
 
             <div className='grid md:grid-cols-2 gap-16'>
                 <div>
-                    <h2 className='text-indigo-700 text-3xl font-bold mb-6 dark:text-[#B7AAFF]'>{profile.subtitle}</h2>
+                    <h2 className='text-indigo-700 text-3xl font-bold mb-6 dark:text-[#B7AAFF]'>
+                        {profile.subtitle}
+                    </h2>
 
                     <ul className='space-y-3 text-sm'>
                         {profile.info.map((item) => (
-                            <li key={item.label} className='dark:text-white'>
-                                <b className="inline-block w-32">{item.label}</b> {item.value}
+                            <li key={item.label} className='dark:text-white flex'>
+                                <b className="inline-block w-32 shrink-0">
+                                    {item.label}
+                                </b>
+
+                                <div>
+                                    <div>{item.value}</div>
+
+                                    {item.subValue && (
+                                        <div className='pt-2'>
+                                            {item.subValue}
+                                        </div>
+                                    )}
+                                </div>
                             </li>
                         ))}
                     </ul>

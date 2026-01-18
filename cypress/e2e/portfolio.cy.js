@@ -52,10 +52,19 @@ describe('Main page tests', () => {
   });
 
   it("Open a GitHub project link", () => {
-    cy.get('[data-testid="project-github"]').first()
-      .invoke("removeAttr", "target")
-      .click();
+    cy.clock();
 
-    cy.url().should("include", "github.com");
+    cy.window().then((win) => {
+      cy.stub(win, "open").as("windowOpen");
+    });
+
+    cy.get('[data-testid="project-github"]').first().click();
+
+    cy.tick(2000);
+
+    cy.get("@windowOpen").should(
+      "have.been.calledWithMatch",
+      /github\.com/
+    );
   });
 })

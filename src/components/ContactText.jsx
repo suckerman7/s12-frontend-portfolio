@@ -12,7 +12,7 @@ export default function ContactText() {
 
             <a 
                 href='mailto:mrty.yksl@gmail.com'
-                className='text-[#4d2a07] font-medium hover:underline inline-flex items-center gap-2 dark:text-[#BAB2E7]'
+                className='underline underline-offset-4 text-[#4d2a07] font-medium hover:underline inline-flex items-center gap-2 dark:text-[#BAB2E7]'
             >
                 👉 mrty.yksl@gmail.com
             </a>

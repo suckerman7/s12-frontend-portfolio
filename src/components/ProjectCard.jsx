@@ -1,7 +1,23 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {toast} from 'react-toastify';
+
+import useTranslation from "../hooks/useTranslation";
 
 export default function ProjectCard({ title, description, techs, image, github, site }) {
+
+    const translation = useTranslation();
+
+    const handleDelayedRedirect = (e, url, message) => {
+        e.preventDefault();
+
+        toast.info(message);
+
+        setTimeout(() => {
+            window.open(url, "_blank", "noopener,noreferrer");
+        }, 2000);
+    };
+
     return (
         <div>
             <img
@@ -29,19 +45,31 @@ export default function ProjectCard({ title, description, techs, image, github, 
                 <a
                     href={github}
                     data-testid='project-github'
-                    target='_blank'
-                    className='text-indigo-800 hover:underline flex items-center gap-2 dark:text-[#E1E1FF]'
+                    className='underline underline-offset-4 text-indigo-800 hover:underline flex items-center gap-2 dark:text-[#E1E1FF]'
+                    onClick={(e) =>
+                        handleDelayedRedirect(
+                            e,
+                            github,
+                            translation.toast.github
+                        )
+                    }
                 >
                     <FontAwesomeIcon icon={faGithub} />
-                    Github
+                    GitHub
                 </a>
 
                 <a
                     href={site}
-                    target='_blank'
-                    className='text-indigo-800 hover:underline dark:text-[#E1E1FF]'
+                    className='underline underline-offset-4 text-indigo-800 hover:underline dark:text-[#E1E1FF]'
+                    onClick={(e) =>
+                        handleDelayedRedirect(
+                            e,
+                            site,
+                            translation.toast.site
+                        )
+                    }
                 >
-                    View Site
+                    {translation.projects.sitelink}
                 </a>
             </div>
         </div>

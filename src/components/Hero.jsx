@@ -7,6 +7,7 @@ import {useNavigate} from 'react-router-dom';
 import { toast } from "react-toastify";
 
 import useTranslation from '../hooks/useTranslation';
+import { delayedRedirect } from '../utils/delayedRedirect';
 
 export default function Hero() {
 
@@ -38,11 +39,11 @@ export default function Hero() {
                     <button onClick={handleHire} className='bg-indigo-800 text-white px-6 py-3 rounded-md transition-all duration-200 hover:bg-indigo-700 hover:scale-[1.02] dark:bg-[#E1E1FF] dark:text-black dark:hover:bg-[#C7C4FF]'>
                         {translation.hero.hire}
                     </button>
-                    <button onClick={() => window.open('https://github.com/suckerman7', "_blank")} className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 transition-all duration-200 hover:bg-indigo-50 hover:scale-[1.02] dark:text-[#BAB2E7] dark:bg-[#383838] dark:hover:bg-[#4A4A4A]'>
+                    <button onClick={() => delayedRedirect("https://github.com/suckerman7", translation.toast.githubprofile)} className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 transition-all duration-200 hover:bg-indigo-50 hover:scale-[1.02] dark:text-[#BAB2E7] dark:bg-[#383838] dark:hover:bg-[#4A4A4A]'>
                         <FontAwesomeIcon className='text-indigo-800 text-2xl dark:text-[#BAB2E7] dark:bg-[#383838]' icon={faGithub} />
                         Github
                     </button>
-                    <button onClick={() => window.open('https://www.linkedin.com/in/mert-y%C3%BCksel-904396311/', "_blank")} className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 transition-all duration-200 hover:bg-indigo-50 hover:scale-[1.02] dark:text-[#BAB2E7] dark:bg-[#383838] dark:hover:bg-[#4A4A4A]'>
+                    <button onClick={() => delayedRedirect("https://www.linkedin.com/in/mert-y%C3%BCksel-904396311/", translation.toast.linkedinprofile)} className='border px-6 py-3 rounded-md text-indigo-800 leading-7 font-medium flex items-center gap-2 transition-all duration-200 hover:bg-indigo-50 hover:scale-[1.02] dark:text-[#BAB2E7] dark:bg-[#383838] dark:hover:bg-[#4A4A4A]'>
                         <FontAwesomeIcon className='text-indigo-800 text-2xl dark:text-[#BAB2E7] dark:bg-[#383838]' icon={faLinkedin} />
                         LinkedIn
                     </button>

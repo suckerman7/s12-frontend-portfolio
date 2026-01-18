@@ -1,7 +1,7 @@
 {
     "hero": {
         "title": "An aspiring developer in rise",
-        "subtitle": "is ready for everything!",
+        "subtitle": "is ready for everything",
         "description": "Hi, my name is Mert. I'm a full-stack developer. If you are looking for a developer who can do great things both in frontend, backend or both; you can count on me to do it.",
         "hire": "Hire Me"
     },
@@ -45,7 +45,7 @@
         "info": [
             { "label": "Date of Birth", "value": "07.05.2002" },
             { "label": "City", "value": "İstanbul" },
-            { "label": "Education", "value": "Beykent University - Computer Engineering" },
+            { "label": "Education", "value": "Beykent University - Computer Engineering", "subValue": "Bachelor's Degree, 2024" },
             { "label": "Preferred Position", "value": "Frontend, Backend, UI" }
         ],
         "aboutTitle": "About Me",
@@ -57,6 +57,7 @@
 
     "projects": {
         "title": "Projects",
+        "sitelink": "View Site",
         "items": [
             {
                 "title": "Technological Foods Website",
@@ -86,7 +87,11 @@
         "hire": "Let's get in touch! 🚀",
         "mail": "Opening your mail client ✉️",
         "nomail": "Email is required ✋",
-        "wrongmail": "Please enter a valid email address 📧"
+        "wrongmail": "Please enter a valid email address 📧",
+        "github": "Opening the GitHub repository 🧑‍💻",
+        "site": "Opening the live project's site 🚀",
+        "githubprofile": "Opening your GitHub profile",
+        "linkedinprofile": "Opening your LinkedIn profile"
     },
 
     "contactform": {
