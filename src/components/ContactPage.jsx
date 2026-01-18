@@ -48,11 +48,11 @@ export default function ContactPage() {
             encodeURIComponent("New Contact Request") +
             `&body=${encodeURIComponent(mailBody)}`;
 
-        const isCypress = window.Cypress;
+        const isCypress = globalThis.Cypress;
         const testEnv = import.meta.env.VITE_DISABLE_MAIL === "true";
 
         if(!isCypress && !testEnv) {
-            window.location.href = mailToLink;
+            globalThis.location.href = mailToLink;
         }
 
         toast.success(translation.toast.mail);
